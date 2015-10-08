@@ -1,0 +1,49 @@
+.gloo-textOverlay{
+
+  /* default text shadow is added to improve contrast with underlying content */
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.5);
+
+  &.gloo-textOverlay--aligncenter{
+    .gloo-textOverlay-collar {
+      max-width:inherit;
+      width:100%;
+      text-align: center;
+    }
+  }
+
+  &.gloo-textOverlay--alignleft{
+
+  }
+
+  &.gloo-textOverlay--alignright{
+    text-align: left;
+    @media #{$gloo-responsive-small}{
+      text-align: right;
+    }
+
+    .gloo-textOverlay-collar {
+      right:0;
+
+    }
+  }
+
+  .gloo-textOverlay-collar {
+    width: 100%;
+    @media #{$gloo-responsive-small}{
+      max-width:50%;
+    }
+    top: 0;
+    position:absolute;
+    @include gloo-utils-transform(translateY(-50%));
+  }
+
+  .gloo-textOverlay-title{
+    margin-bottom:$gloo-verticalRhythm;
+  }
+
+  .gloo-textOverlay-body{
+    margin-bottom:$gloo-verticalRhythm;
+  }
+
+
+}

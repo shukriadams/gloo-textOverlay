@@ -1,0 +1,9 @@
+{
+  "_modelName" : "glooTextOverlay",
+
+  "title" : "Text overlay",
+  "body" : "This is the stock text overlay module. It can be used to float text over media like images. It supports left, right and center alignment.",
+
+  "__comment" : "left|right|center",
+  "align" : "left"
+}

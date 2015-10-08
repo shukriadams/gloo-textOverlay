@@ -1,0 +1,23 @@
+<div class="gloo-textOverlay gloo-textOverlay--align{{align}}">
+    <!-- use the collar to control the max width of the overlay, this must be inside of row/column elements so as not to
+      interfere with the grid layout -->
+    <div class="gloo-textOverlay-collar">
+        {{#if title}}
+            <div class="gloo-textOverlay-title">
+                {{title}}
+            </div>
+        {{/if}}
+
+        {{#if body}}
+            <div class="gloo-textOverlay-body">
+                {{body}}
+            </div>
+        {{/if}}
+
+        {{#if cta}}
+            <div class="gloo-textOverlay-cta">
+                <a class="gloo-button" href="{{cta.href}}">{{cta.text}}</a>
+            </div>
+        {{/if}}
+    </div>
+</div>
